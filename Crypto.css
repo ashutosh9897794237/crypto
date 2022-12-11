@@ -1,0 +1,11 @@
+*{
+    background-color: black;
+    color: white;
+    align-items: center;
+    margin-left: 10%;
+
+}
+td{
+    border-bottom: 2px solid white;
+    align-items: center;
+}

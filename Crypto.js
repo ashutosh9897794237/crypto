@@ -25,8 +25,9 @@ async function getData(url) {
     const tableBody = document.getElementById('table_body');
     data.forEach(element => {
         let tr = document.createElement('tr');
+        console.log(element.image);
         tableBody.appendChild(tr);
-        tr.innerHTML = `<td style="height:70px" ><img src=${element.image} style="width:25px">  ${element.name}</td> <td>${element.symbol}</td> <td>$${element.current_price}</td> <td>$${element.total_volume}</td> <td style=${element.price_change_24h > 0 ? "color:#00FF00" : "color: #fff"}>${element.price_change_24h}%</td> <td>MKT Cap : $${element.market_cap}</td>`;
+        tr.innerHTML = `<td style="height:70px" ><img src="${element.image}" style="width:25px">  ${element.name}</td> <td>${element.symbol}</td> <td>$${element.current_price}</td> <td>$${element.total_volume}</td> <td style=${element.price_change_24h > 0 ? "color:#00FF00" : "color: #fff"}>${element.price_change_24h}%</td> <td>MKT Cap : $${element.market_cap}</td>`;
 
 
     });
